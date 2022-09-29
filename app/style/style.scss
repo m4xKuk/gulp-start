@@ -1,0 +1,44 @@
+::placeholder {
+  color: gray;
+}
+
+.image {
+  background-image: url(image@1x.png);
+}
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}
+
+body{
+  font-family: "Montserrat";
+  img {
+    background-image: url(/images/1.png);
+  }
+}
+
+img {
+  background-image: url(/images/1.png);
+}
+
+h1 {
+  color: gray;
+  @media (min-width: 450px){
+    color: red;
+  }
+  @media (min-width: 440px){
+    color: red;
+  }
+}
+
+p {
+  color: gray;
+  @media (min-width: 450px){
+    color: red;
+  }
+
+  > span {
+    color:antiquewhite;
+  }
+}
